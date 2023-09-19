@@ -1,0 +1,8 @@
+<hi>Products</hi>
+<ul>
+    <!-- template tag-dynamically excute logic -->
+    <!-- double curley brace syntax used to dynamically render value in html marker -->
+    {% for product in products %} 
+        <li>{{ product.name }} $({{ product.price }})</li>
+    {% endfor %}
+</ul>
